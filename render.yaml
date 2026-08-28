@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: 0low-connect
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true

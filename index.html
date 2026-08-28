@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>0low Connect</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="app">
+<aside class="servers"><div class="logo">0L</div><button id="newServer">＋</button><button id="discover">⌕</button></aside>
+<main class="main">
+<header><div><h2 id="serverName">0low Connect</h2><span id="serverInfo">Escolha um servidor</span></div><div><button id="invite">🔗</button><button id="members">👥</button></div></header>
+<section id="messages" class="messages"><div class="welcome"><div class="big">#</div><h1>Bem-vindo ao 0low Connect</h1><p>Crie um servidor ou entre em um para começar.</p></div></section>
+<form id="chat"><input id="input" placeholder="Entre em um servidor primeiro" disabled><button>➤</button></form>
+</main><aside id="memberPanel" class="panel hidden"><h3>Membros</h3><div id="memberList"></div></aside></div>
+
+<div id="call" class="call hidden">
+ <div class="callTop"><b>🔊 Call geral</b><button id="closeCall">×</button></div>
+ <div id="videoGrid" class="videoGrid"></div>
+ <div class="callBottom">
+  <button id="mute">🎙️</button><button id="camera">📷</button><button id="screen">📱</button><button id="leave" class="hang">☎</button>
+ </div>
+ <div id="callHint">Entre na call para ativar câmera e microfone.</div>
+</div>
+
+<div id="modal" class="modal hidden"><div class="card"><button id="close" class="close">×</button><h2>Servidores online</h2><p>Os servidores aparecem enquanto alguém estiver conectado.</p><div id="serverList"></div><hr><input id="serverCode" placeholder="Código do convite"><button id="joinCode" class="primary">Entrar pelo código</button></div></div>
+<div id="createModal" class="modal hidden"><div class="card"><button id="closeCreate" class="close">×</button><h2>Criar servidor</h2><input id="serverNameInput" placeholder="Nome do servidor"><button id="create" class="primary">Criar servidor</button></div></div>
+<div id="toast"></div><script src="app.js"></script></body></html>
